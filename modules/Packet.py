@@ -19,7 +19,4 @@ class Packet:
 class NamedMac:
     def __init__(self, mac=Optional[str], name=Optional[str]):
         self.mac = mac
-        if name is None:
-            self.name = self.mac
-        else:
-            self.name = name
+        self.name = name
